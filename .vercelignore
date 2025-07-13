@@ -1,4 +1,4 @@
-# Backend files
+# Backend files only
 backend/
 node_modules/
 .git/

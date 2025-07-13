@@ -1,7 +1,14 @@
 {
   "version": 2,
-  "buildCommand": "pwd && ls -la && find . -name 'frontend' -type d && cd frontend && pwd && npm install && npm run build",
-  "outputDirectory": "frontend/dist/frontend/browser",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "dist/frontend/browser"
+      }
+    }
+  ],
   "routes": [
     {
       "src": "/(.*)",

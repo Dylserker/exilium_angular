@@ -1,6 +1,17 @@
 {
+  "name": "exilium-angular",
+  "version": "1.0.0",
+  "description": "Application full-stack Angular + NestJS",
+  "scripts": {
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd frontend && npm run serve:ssr:frontend",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run start:dev",
+    "dev:frontend": "cd frontend && npm start"
+  },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
-    "@types/passport-jwt": "^4.0.1"
+    "@types/passport-jwt": "^4.0.1",
+    "concurrently": "^8.2.2"
   }
 }

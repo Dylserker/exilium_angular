@@ -1,0 +1,15 @@
+# Backend files
+backend/
+node_modules/
+.git/
+.idea/
+
+# Development files
+*.log
+*.tmp
+*.temp
+
+# Environment files
+.env
+.env.local
+.env.production 
